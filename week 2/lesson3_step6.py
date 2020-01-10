@@ -1,5 +1,4 @@
 from selenium import webdriver
-import os
 from math import log, sin
 import time
 
@@ -9,8 +8,8 @@ try:
     browser.get(link)
 
     browser.find_element_by_tag_name("button").click()
-    new_window = browser.window_handles[1]  # сохранили имя 2 вкладки в переменную
-    browser.switch_to.window(new_window)  # сменили окно
+    new_window = browser.window_handles[1]
+    browser.switch_to.window(new_window)
     time.sleep(0.5)
     x = browser.find_element_by_id("input_value").text
     x = str(log(abs(12 * sin(int(x)))))
