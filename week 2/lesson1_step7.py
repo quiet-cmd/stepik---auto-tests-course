@@ -9,7 +9,6 @@ def calc(x):
 
 try:
     link = "http://suninjuly.github.io/get_attribute.html"
-    # browser = webdriver.Chrome()
     browser = webdriver.Firefox()
     browser.get(link)
 
@@ -24,9 +23,5 @@ try:
     browser.find_element_by_css_selector("button.btn").click()
 
 finally:
-    # ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(10)
-    # закрываем браузер после всех манипуляций
     browser.quit()
-
-    # пустая строка ;3
