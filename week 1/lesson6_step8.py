@@ -1,8 +1,5 @@
 from selenium import webdriver
 import time
-import math
-
-# https://habr.com/ru/post/250975/   Пример работы этих методов...
 
 link = "http://suninjuly.github.io/find_xpath_form"
 
@@ -22,9 +19,6 @@ try:
     button.click()
 
 finally:
-    # успеваем скопировать код за 30 секунд
     time.sleep(30)
-    # закрываем браузер после всех манипуляций
     browser.quit()
 
-# не забываем оставить пустую строку в конце файла
