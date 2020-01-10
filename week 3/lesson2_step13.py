@@ -1,6 +1,6 @@
 from selenium import webdriver
-import pytest
 import unittest
+import pytest
 
 
 def fill_form(link):
