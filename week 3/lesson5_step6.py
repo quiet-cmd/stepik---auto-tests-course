@@ -14,3 +14,4 @@ def test_not_succeed():
 @pytest.mark.skip
 def test_skipped():
     assert False
+
