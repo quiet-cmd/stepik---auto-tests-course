@@ -2,12 +2,10 @@ from selenium import webdriver
 import time
 import math
 
-# https://habr.com/ru/post/250975/   Пример работы этих методов...
 
 link = "http://suninjuly.github.io/find_link_text"
 
 try:
-    # browser = webdriver.Chrome()
     browser = webdriver.Firefox()
     browser.get(link)
     text = str(math.ceil(math.pow(math.pi, math.e) * 10000))  # зашифрованная ссылка
@@ -27,9 +25,5 @@ try:
     button.click()
 
 finally:
-    # успеваем скопировать код за 30 секунд
     time.sleep(30)
-    # закрываем браузер после всех манипуляций
     browser.quit()
-
-# не забываем оставить пустую строку в конце файла
