@@ -7,7 +7,7 @@ def fill_form(link):
     browser.get(link)
 
     browser.find_element_by_css_selector(".first:required").send_keys("Ivan")
-    browser.find_element_by_css_selector(".second:required").send_keys("Petrov")
+    browser.find_element_by_css_selector(".second:required").send_keys("Petrov ")
     browser.find_element_by_css_selector(".third:required").send_keys("url@gmail")
     browser.find_element_by_css_selector("button.btn").click()
 
