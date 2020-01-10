@@ -1,5 +1,4 @@
 from selenium import webdriver
-import os
 from math import log, sin
 import time
 
